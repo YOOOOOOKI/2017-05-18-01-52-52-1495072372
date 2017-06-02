@@ -11,19 +11,26 @@ o) 平均值 = ${sequence.average()}
 class Sequence {
   constructor(input) {
     // Write your code here
+    //    this.length=input.length;
+   // Write your code here
+   for(let i=0;i<this.length;i++)
+   {
+    this[i]=input[i];
+    
+   }
   }
    numm()
    {
    	return input.length;
    }
-  minimum() {
+   minimum() {
     var mins=0; 
-    for(let i=0;i<input.length;i++)
+    for(let i=0;i<this.length;i++)
     {
-
-     if (mins>input[i])
+      alert(this[i]);
+     if (mins>this[i])
      {
-      mins=input[i];
+      mins=this[i];
      }
 
     }
@@ -33,11 +40,11 @@ class Sequence {
   maximum()
   {
     var maxs;
-    for(let i=0;i<input.length;i++)
+    for(let i=0;i<this.length;i++)
     {
-      if(maxs<input[i])
+      if(maxs<this[i])
       {
-        maxs=input[i];
+        maxs=this[i];
       }
     }
     return maxs;
@@ -51,6 +58,8 @@ class Sequence {
     }
     return  ave.toFixed(2);
   }
+  // Write your code here
+
   // Write your code here
 
   // Write your code here
