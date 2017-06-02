@@ -4,7 +4,6 @@ module.exports = function main() {
 o) 最大值 = ${sequence.maximum()}
 o) 元素数量 = ${sequence.length}
 o) 平均值 = ${sequence.average()}
-
 `);
 };
 
@@ -35,7 +34,7 @@ class Sequence {
   }
   maximum()
   {
-    var maxs;
+    var maxs=0;
     for(let i=0;i<this.length;i++)
     {
       if(maxs<this[i])
