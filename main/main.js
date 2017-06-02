@@ -49,9 +49,9 @@ class Sequence {
   average()
   {
     var ave=0;
-    for(let i=0;i<input.length;i++)
+    for(let i=0;i<this.length;i++)
     {
-      ave=ave+input[i];
+      ave=ave+this[i];
     }
     return  ave.toFixed(2);
   }
