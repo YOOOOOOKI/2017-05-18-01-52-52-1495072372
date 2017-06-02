@@ -1,17 +1,8 @@
-module.exports = function main() {
-    let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
-    console.log(`o) 最小值 = ${sequence.minimum()}
-o) 最大值 = ${sequence.maximum()}
-o) 元素数量 = ${sequence.length}
-o) 平均值 = ${sequence.average()}
 
-`);
-};
 
 class Sequence {
-  constructor(input) {
-    // Write your code here
-    //    this.length=input.length;
+   constructor(input) {
+   this.length=input.length;
    // Write your code here
    for(let i=0;i<this.length;i++)
    {
@@ -19,8 +10,8 @@ class Sequence {
     
    }
   }
-  
-   minimum() {
+ 
+  minimum() {
     var mins=0; 
     for(let i=0;i<this.length;i++)
     {
@@ -53,6 +44,7 @@ class Sequence {
     {
       ave=ave+this[i];
     }
+    ave=ave/this.length;
     return  ave.toFixed(2);
   }
   // Write your code here
@@ -61,3 +53,12 @@ class Sequence {
 
   // Write your code here
 }
+module.exports = function main() {
+    let sequence = new Sequence([6, 9, 15, -2, 92, 11]);
+    console.log(`o) 最小值 = ${sequence.minimum()}
+o) 最大值 = ${sequence.maximum()}
+o) 元素数量 = ${sequence.length}
+o) 平均值 = ${sequence.average()}
+
+`);
+};
